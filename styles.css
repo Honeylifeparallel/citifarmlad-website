@@ -1,0 +1,218 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0%;
+    padding: 0%;
+     background-color: #fafafa;
+     color: #333333;
+  }
+  
+  /* Header Styles */
+  .header {
+    background-color: #FF5722;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .header ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .header ul li a:hover {
+    border-bottom: 2px solid white;
+  }
+  
+  /* Hero Section with animations */
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #66bb6a, #81c784);
+    padding: 50px 20px;
+    color: white;
+    height: 400px;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    animation: fadeInUp 2s ease-out;
+  }
+  
+  .hero-content p {
+    margin: 20px 0;
+  }
+  
+  .hero-animate img {
+    width: 300px;
+    animation: float 4s ease-in-out infinite;
+  }
+  
+  .cta-button {
+    background-color: #FFEB3B;
+    color: #333333;
+    padding: 10px 20px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #D32F2F;
+    color: white;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+  
+  /* General Section Styles */
+  section {
+    padding: 50px 20px;
+    background-color:#4CAF50;
+    border-radius: 5px;
+    margin: 10px 0; 
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+  
+  /* Article Card Layout */
+  .guide-content, .science-content, .community-content, .recipe-content, .shop-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  article {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 30%;
+    text-align: left;
+    transition: transform 0.3s ease;
+  }
+  
+  article:hover {
+    transform: translateY(-10px);
+  }
+  
+  article img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  /* Footer Styles */
+  footer {
+    background-color: #333333;
+    color: white;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .social-links  {
+    color: white;
+    margin-top: 10px;
+    text-decoration: none;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .hero {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .guide-content, .science-content, .community-content, .recipe-content, .shop-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    article {
+      width: 80%;
+    }
+  }
+  
+  /* Scoville Scale Styles */
+  .scoville-range {
+    width: 100%;
+    margin: 20px 0;
+  }
+  
+  #scoville-output {
+    font-weight: bold;
+    color: #388e3c;
+    font-size: 1.2rem;
+  }
+  
+  /* Add to Cart Button */
+  .add-to-cart {
+    background-color: #388e3c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-to-cart:hover {
+    background-color: #2e7d32;
+  }
+img  {
+  width: 200px;
+  height: auto;
+
+}  
+.social-links a {
+  color: #fafafa;
+  text-decoration: none;
+  margin: 0 15px;
+  transition: color 0.3s;
+}
+.social-links a :hover {
+  color: #ff6347;
+}
+  

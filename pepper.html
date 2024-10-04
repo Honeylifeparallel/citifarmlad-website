@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CitiFarmlad - Habanero Peppers</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header id="home" class="header">
+    <div class="hero-animate">
+      <img src="images/logo.jpg" alt="CitiFarmlad Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#guides">Growing Guides</a></li>
+        <li><a href="#science">Pepper Science</a></li>
+        <li><a href="#community">Community</a></li>
+        <li><a href="#recipes">Recipes</a></li>
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section with animations -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Grow, Learn, and Shop Habanero Peppers</h1>
+      <p>Everything you need to know about growing and enjoying peppers</p>
+      <button class="cta-button">Shop Now</button>
+    </div>
+    <div class="hero-animate">
+      <img src="images/habanero peppers.jpg" alt="Habanero Pepper">
+    </div>
+  </section>
+
+  <!-- Growing Guides Section -->
+  <section id="guides" class="guides">
+    <h2>Growing Guides</h2>
+    <div class="guide-content">
+      <article>
+        <img src="images/beginners guide.jpg" alt="Guide 1">
+        <h3>Step-by-step Guides</h3>
+        <p>Follow our guides to grow Habanero peppers from seeds.</p>
+      </article>
+      <article>
+        <img src="images/growing guide.jpg" alt="Growing Calendar">
+        <h3>Interactive Growing Calendar</h3>
+        <p>Input your location to see the best time to grow.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Pepper Science Section -->
+  <section id="science" class="pepper-science">
+    <h2>Pepper Science</h2>
+    <div class="science-content">
+      <article>
+        <h3>Scoville Scale</h3>
+        <input type="range" min="0" max="1000000" value="500000" class="scoville-range">
+        <p id="scoville-output">500,000 SHU</p>
+      </article>
+      <article>
+        <h3>Pepper Anatomy</h3>
+        <img src="images/pepper anatomy.jpg" alt="Pepper Anatomy">
+        <p>Learn about the different parts of the pepper.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Community Section -->
+  <section id="community" class="community">
+    <h2>Join the Community</h2>
+    <div class="community-content">
+      <article>
+        <h3>Join the Forum</h3>
+        <p>Discuss growing tips, recipes, and more with other growers.</p>
+        <button class="cta-button">Join Now</button>
+      </article>
+      <article>
+        <h3>Track Your Growth</h3>
+        <form id="growth-tracker">
+          <label for="growth-stage">Stage of Growth:</label>
+          <input type="text" id="growth-stage" name="growth-stage" placeholder="e.g., Seedling, Flowering">
+          <button type="submit">Log Growth</button>
+        </form>
+        <div id="growth-log"></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Recipes Section -->
+  <section id="recipes" class="recipes">
+    <h2>Recipes & Tips</h2>
+    <div class="recipe-content">
+      <article>
+        <h3>Spicy Salsa</h3>
+        <img src="images/spicy salsa.jpg" alt="Spicy Salsa">
+        <p>Make the perfect spicy salsa using fresh Habaneros.</p>
+      </article>
+      <article>
+        <h3>Preservation Tips</h3>
+        <img src="images/preserving peppers.jpg" alt="Preserving Peppers">
+        <p>Learn how to store your peppers for long-term use.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Shop Section -->
+  <section id="shop" class="shop">
+    <h2>Shop</h2>
+    <div class="shop-content">
+      <article>
+        <h3>Seeds</h3>
+        <img src="images/seeds.jpg" alt="Seeds">
+        <p>$3.99 per packet</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </article>
+      <article>
+        <h3>Fresh Peppers</h3>
+        <img src="images/fresh peppers.jpg" alt="Fresh Peppers">
+        <p>$4.99 per lb</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </article>
+    </div>
+  </section>
+
+  <!-- Footer -->
+   <footer>
+    <p>&copy; 2024 CitiFarmlad | All Rights Reserved</p>
+    <div class="social-links">
+      <a href="https://www.instagram.com/citifarmlad/profilecard/?igsh=MXFybHlveGQwMW5wZg==" target="_blank">Visit CitiFarmland Instagram</a>
+      <a href="https://x.com/daniels_olubi?t=kdbVlUcm58sFSTKOoiHRnQ&s=08" target="_blank">Visit CitiFarmland twitter</a>
+</div>
+    
+  </footer>
+
+  <script src="script.js"></script>
+</html>
